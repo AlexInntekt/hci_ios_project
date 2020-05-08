@@ -8,11 +8,14 @@
 
 import UIKit
 
-class LoginVC: UIViewController
+class LoginVC: UIViewController, UITextFieldDelegate
 {
 
-    @IBOutlet weak var loginButton: UIButton!
+    var displayingMenu = false
+    
     @IBOutlet weak var menuView: UIView!
+    @IBOutlet var username_textfield: UITextField!
+    @IBOutlet var password_textfield: UITextField!
     
     @IBOutlet weak var menuViewDisplayConstraint: NSLayoutConstraint!
     
@@ -26,18 +29,19 @@ class LoginVC: UIViewController
         triggerMenu()
     }
     
-    var displayingMenu = false
-    
-    @IBAction func loginButton(_ sender: Any) {
+    @IBOutlet weak var loginButton: UIButton!
+    @IBAction func loginButton(_ sender: Any)
+    {
     }
-    @IBOutlet weak var username_textfield: UITextField!
+    
+    
     
     func setupUI()
     {
 //        self.menuViewDisplayConstraint.constant = -200
 //        self.leadingConstraintFaderView.constant = 1000
         self.loginButton.layer.cornerRadius = 18
-        self.username_textfield.layer.cornerRadius = 21
+//        self.username_textfield.layer.cornerRadius = 21
         self.view.layoutIfNeeded()
         
     }
@@ -89,6 +93,14 @@ class LoginVC: UIViewController
         // Do any additional setup after loading the view.
         
         print("running viewDidLoad")
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTap(sender:)))
+        tapGestureRecognizer.numberOfTapsRequired = 1
+        faderView.isUserInteractionEnabled = true
+        faderView.addGestureRecognizer(tapGestureRecognizer)
+        
+        username_textfield.delegate = self
+        password_textfield.delegate = self
     }
     
     @objc func didTap(sender: UITapGestureRecognizer) {
@@ -97,6 +109,7 @@ class LoginVC: UIViewController
         triggerMenu()
         
     }
+    
 
 
 }
