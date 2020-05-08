@@ -12,6 +12,17 @@ import UIKit
 class SignUpVC:UIViewController
 {
     
+    @IBOutlet weak var age_textfield: UITextField!
+    
+    @IBOutlet weak var registerButton: UIButton!
+
+    @IBAction func registerButton(_ sender: Any)
+    {
+        
+    }
+    
+    
+    
 }
 
 
