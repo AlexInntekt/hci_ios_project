@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController, UITextFieldDelegate
+class LoginVC: UIViewController
 {
 
     var displayingMenu = false
@@ -114,3 +114,10 @@ class LoginVC: UIViewController, UITextFieldDelegate
 
 }
 
+
+extension LoginVC: UITextFieldDelegate{
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
+    }
+}
