@@ -8,11 +8,94 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController
+{
 
-    override func viewDidLoad() {
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var menuView: UIView!
+    
+    @IBOutlet weak var menuViewDisplayConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var faderView: UIView!
+    @IBOutlet weak var faderViewConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var menuButton: UIButton!
+    @IBAction func menuButton(_ sender: Any)
+    {
+        print("Clicked on button menu")
+        triggerMenu()
+    }
+    
+    var displayingMenu = false
+    
+    @IBAction func loginButton(_ sender: Any) {
+    }
+    @IBOutlet weak var username_textfield: UITextField!
+    
+    func setupUI()
+    {
+//        self.menuViewDisplayConstraint.constant = -200
+//        self.leadingConstraintFaderView.constant = 1000
+        self.loginButton.layer.cornerRadius = 18
+        self.username_textfield.layer.cornerRadius = 21
+        self.view.layoutIfNeeded()
+        
+    }
+    
+    func triggerMenu()
+    {
+        
+        if(!displayingMenu)
+        {
+//            self.leadingConstraintFaderView.constant = 0
+//            self.faderView.alpha=0
+            self.faderViewConstraint.constant = 0
+            self.view.layoutIfNeeded()
+            
+            self.menuViewDisplayConstraint.constant = 0
+            
+            UIView.animate(withDuration: 0.6) {
+//                self.faderView.alpha=0.5
+                self.view.layoutIfNeeded()
+            }
+        }
+        else
+        {
+//            self.leadingConstraintFaderView.constant = +1000
+//            self.faderView.alpha=0.5
+            self.faderViewConstraint.constant = -1000
+            self.view.layoutIfNeeded()
+            
+            self.menuViewDisplayConstraint.constant = -200
+            
+            UIView.animate(withDuration: 0.6) {
+//                self.faderView.alpha=0
+                self.view.layoutIfNeeded()
+            }
+            
+        }
+        
+        displayingMenu = !displayingMenu
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        setupUI()
+    }
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        print("running viewDidLoad")
+    }
+    
+    @objc func didTap(sender: UITapGestureRecognizer) {
+        let location = sender.location(in: view)
+        // User tapped at the point above. Do something with that if you want.
+        triggerMenu()
+        
     }
 
 
