@@ -12,16 +12,36 @@ import UIKit
 class SignUpVC:UIViewController
 {
     
-    @IBOutlet weak var age_textfield: UITextField!
+    @IBOutlet var age_textfield: UITextField!
+    @IBOutlet weak var height_textfield: UITextField!
+    @IBOutlet weak var weight_textfield: UITextField!
     
-    @IBOutlet weak var registerButton: UIButton!
-
+    
+    @IBOutlet var registerButton: UIButton!
     @IBAction func registerButton(_ sender: Any)
     {
         
     }
     
+    func setUpUI()
+    {
+        self.age_textfield.layer.cornerRadius = 18
+        self.height_textfield.layer.cornerRadius = 18
+        self.weight_textfield.layer.cornerRadius = 18
+        self.registerButton.layer.cornerRadius = 10
+        
+        
+        self.view.layoutIfNeeded()
+    }
     
+    override func viewDidLoad()
+    {
+        self.age_textfield.delegate = self
+        self.height_textfield.delegate = self
+        self.weight_textfield.delegate = self
+        
+        self.setUpUI()
+    }
     
 }
 
