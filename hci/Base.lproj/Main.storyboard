@@ -230,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328" y="60"/>
+            <point key="canvasLocation" x="291" y="44"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="vyE-CO-Pao">
@@ -428,11 +428,105 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tM-GD-APA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1700.0000000000002" y="59.598214285714285"/>
+            <point key="canvasLocation" x="1212" y="-469"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j5m-5x-FE1">
+            <objects>
+                <viewController id="7ko-kI-dBV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kMo-rd-ydx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMj-4O-utd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="98.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsV-cL-8aQ">
+                                        <rect key="frame" x="7" y="42" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hsV-cL-8aQ" secondAttribute="height" multiplier="1:1" id="1ff-gV-zTy"/>
+                                            <constraint firstAttribute="height" constant="40" id="HiC-ow-JwR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" image="menu-1"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NutriDaily" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxH-fV-pwh">
+                                        <rect key="frame" x="142" y="45.5" width="130" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="7Yg-6l-SG8"/>
+                                            <constraint firstAttribute="height" constant="33" id="zLd-4F-oLV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81568627449999997" green="0.0" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98.5" id="BjN-Th-gbI"/>
+                                    <constraint firstItem="dxH-fV-pwh" firstAttribute="centerX" secondItem="lMj-4O-utd" secondAttribute="centerX" id="Jix-pQ-0bO"/>
+                                    <constraint firstItem="hsV-cL-8aQ" firstAttribute="leading" secondItem="lMj-4O-utd" secondAttribute="leading" constant="7" id="wI2-QW-vWQ"/>
+                                    <constraint firstItem="dxH-fV-pwh" firstAttribute="centerY" secondItem="hsV-cL-8aQ" secondAttribute="centerY" id="wyc-9p-snR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ha-7y-8H7">
+                                <rect key="frame" x="92" y="709" width="230" height="43"/>
+                                <color key="backgroundColor" red="0.81568627449999997" green="0.23309075339999999" blue="0.21899856049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="d69-Ft-1gm"/>
+                                    <constraint firstAttribute="height" constant="43" id="dwN-Ku-7u9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="23"/>
+                                <state key="normal" title="Or sign in with">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="9Nu-8e-r78" eventType="touchUpInside" id="j8x-Jn-I5c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register to track your recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rom-na-rBO">
+                                <rect key="frame" x="33" y="219" width="348" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="e19-bp-rXa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-frame-with-different-aliments_23-2147846385" translatesAutoresizingMaskIntoConstraints="NO" id="lFG-m9-sEc">
+                                <rect key="frame" x="20.5" y="309" width="373" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="10D-0I-Ikq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lFG-m9-sEc" firstAttribute="width" secondItem="kMo-rd-ydx" secondAttribute="width" multiplier="0.9" id="5AN-3z-eWm"/>
+                            <constraint firstItem="Rom-na-rBO" firstAttribute="centerX" secondItem="nbc-52-MHy" secondAttribute="centerX" id="8yh-XX-3oH"/>
+                            <constraint firstItem="nbc-52-MHy" firstAttribute="trailing" secondItem="lMj-4O-utd" secondAttribute="trailing" id="CBC-Xe-NY1"/>
+                            <constraint firstItem="nbc-52-MHy" firstAttribute="top" secondItem="hsV-cL-8aQ" secondAttribute="top" constant="2" id="FGY-dv-ike"/>
+                            <constraint firstItem="nbc-52-MHy" firstAttribute="bottom" secondItem="0Ha-7y-8H7" secondAttribute="bottom" constant="110" id="IV0-qT-K5I"/>
+                            <constraint firstItem="Rom-na-rBO" firstAttribute="top" secondItem="lMj-4O-utd" secondAttribute="bottom" constant="120.5" id="VDE-sK-ngJ"/>
+                            <constraint firstItem="Rom-na-rBO" firstAttribute="width" secondItem="kMo-rd-ydx" secondAttribute="width" multiplier="0.84" id="Xyv-lR-cD9"/>
+                            <constraint firstItem="lMj-4O-utd" firstAttribute="leading" secondItem="kMo-rd-ydx" secondAttribute="leading" id="cQm-2y-tlM"/>
+                            <constraint firstItem="lFG-m9-sEc" firstAttribute="top" secondItem="Rom-na-rBO" secondAttribute="bottom" constant="30" id="n9h-Co-PBA"/>
+                            <constraint firstItem="0Ha-7y-8H7" firstAttribute="centerX" secondItem="nbc-52-MHy" secondAttribute="centerX" id="pdR-Y2-UyI"/>
+                            <constraint firstItem="lMj-4O-utd" firstAttribute="top" secondItem="kMo-rd-ydx" secondAttribute="top" id="ph6-Ua-Mgx"/>
+                            <constraint firstItem="lFG-m9-sEc" firstAttribute="centerX" secondItem="nbc-52-MHy" secondAttribute="centerX" id="vpQ-nq-TCU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nbc-52-MHy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wif-2E-aOV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2068" y="-177"/>
         </scene>
     </scenes>
     <resources>
         <image name="back" width="512" height="512"/>
+        <image name="food-frame-with-different-aliments_23-2147846385" width="626" height="626"/>
         <image name="key" width="514" height="837"/>
         <image name="logo_transparent" width="1200" height="1200"/>
         <image name="menu" width="50" height="50"/>
