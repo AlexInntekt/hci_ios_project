@@ -25,7 +25,6 @@ class LoginVC: UIViewController
     @IBOutlet weak var menuButton: UIButton!
     @IBAction func menuButton(_ sender: Any)
     {
-        print("Clicked on button menu")
         triggerMenu()
     }
     
@@ -58,7 +57,8 @@ class LoginVC: UIViewController
             
             self.menuViewDisplayConstraint.constant = 0
             
-            UIView.animate(withDuration: 0.6) {
+            UIView.animate(withDuration: 0.6)
+            {
 //                self.faderView.alpha=0.5
                 self.view.layoutIfNeeded()
             }
@@ -80,6 +80,9 @@ class LoginVC: UIViewController
         }
         
         displayingMenu = !displayingMenu
+        
+      
+           
     }
     
     override func viewWillAppear(_ animated: Bool)

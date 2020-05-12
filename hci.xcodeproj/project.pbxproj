@@ -18,6 +18,8 @@
 		039C1B7B2465A8390031D34E /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C1B7A2465A8390031D34E /* SignUpVC.swift */; };
 		039C1B7E2465AB170031D34E /* LeftToRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C1B7D2465AB170031D34E /* LeftToRight.swift */; };
 		039C1B802465AB3A0031D34E /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C1B7F2465AB3A0031D34E /* RightToLeft.swift */; };
+		039C1B82246AF59C0031D34E /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C1B81246AF59C0031D34E /* MainPageVC.swift */; };
+		039C1B84246B17D50031D34E /* DesignableX in Resources */ = {isa = PBXBuildFile; fileRef = 039C1B83246B17D50031D34E /* DesignableX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		039C1B7A2465A8390031D34E /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		039C1B7D2465AB170031D34E /* LeftToRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftToRight.swift; sourceTree = "<group>"; };
 		039C1B7F2465AB3A0031D34E /* RightToLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightToLeft.swift; sourceTree = "<group>"; };
+		039C1B81246AF59C0031D34E /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
+		039C1B83246B17D50031D34E /* DesignableX */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DesignableX; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +109,12 @@
 		033E5174246562B20040402F /* hci */ = {
 			isa = PBXGroup;
 			children = (
+				039C1B83246B17D50031D34E /* DesignableX */,
 				039C1B7C2465AB090031D34E /* segues */,
 				033E5175246562B20040402F /* AppDelegate.swift */,
 				033E5177246562B20040402F /* SceneDelegate.swift */,
 				033E5179246562B20040402F /* LoginVC.swift */,
+				039C1B81246AF59C0031D34E /* MainPageVC.swift */,
 				039C1B7A2465A8390031D34E /* SignUpVC.swift */,
 				033E517B246562B20040402F /* Main.storyboard */,
 				033E517E246562B30040402F /* Assets.xcassets */,
@@ -250,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				033E5182246562B30040402F /* LaunchScreen.storyboard in Resources */,
+				039C1B84246B17D50031D34E /* DesignableX in Resources */,
 				033E517F246562B30040402F /* Assets.xcassets in Resources */,
 				033E517D246562B20040402F /* Main.storyboard in Resources */,
 			);
@@ -279,6 +286,7 @@
 				039C1B7E2465AB170031D34E /* LeftToRight.swift in Sources */,
 				039C1B7B2465A8390031D34E /* SignUpVC.swift in Sources */,
 				039C1B802465AB3A0031D34E /* RightToLeft.swift in Sources */,
+				039C1B82246AF59C0031D34E /* MainPageVC.swift in Sources */,
 				033E517A246562B20040402F /* LoginVC.swift in Sources */,
 				033E5176246562B20040402F /* AppDelegate.swift in Sources */,
 				033E5178246562B20040402F /* SceneDelegate.swift in Sources */,
