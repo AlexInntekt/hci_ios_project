@@ -1038,7 +1038,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5xB-no-OXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2033" y="724"/>
+            <point key="canvasLocation" x="2010" y="706"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gMQ-Yt-WMy">
@@ -1777,6 +1777,28 @@ total of 16.98€ EUR</string>
                                     <action selector="registerButton:" destination="9Nu-8e-r78" eventType="touchUpInside" id="ks0-Ne-ule"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cq9-w8-zkE" customClass="UIButtonX">
+                                <rect key="frame" x="137" y="807" width="140" height="43"/>
+                                <color key="backgroundColor" red="0.81568627449999997" green="0.23309075339999999" blue="0.21899856049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="HFK-Qg-AIE"/>
+                                    <constraint firstAttribute="width" constant="140" id="Wn4-sU-s7y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="23"/>
+                                <state key="normal" title="Free version">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonRecipes:" destination="bo8-Ha-7Ar" eventType="touchUpInside" id="s46-5p-jpc"/>
+                                    <action selector="registerButton:" destination="9Nu-8e-r78" eventType="touchUpInside" id="2VH-ez-5K0"/>
+                                    <segue destination="2gk-MV-eHQ" kind="presentation" customClass="LeftToRight" customModule="hci" customModuleProvider="target" modalPresentationStyle="fullScreen" id="OFL-Zs-kox"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1789,12 +1811,14 @@ total of 16.98€ EUR</string>
                             <constraint firstItem="vwN-Rd-sTG" firstAttribute="top" secondItem="Qct-bV-3SP" secondAttribute="bottom" constant="60" id="PSF-vW-HcU"/>
                             <constraint firstItem="Lnw-0O-rnf" firstAttribute="leading" secondItem="CcY-jE-93g" secondAttribute="leading" constant="30" id="Tim-8h-y7r"/>
                             <constraint firstItem="gtg-Yt-waQ" firstAttribute="centerX" secondItem="CcY-jE-93g" secondAttribute="centerX" id="VNT-FS-3cJ"/>
+                            <constraint firstItem="cq9-w8-zkE" firstAttribute="top" secondItem="gtg-Yt-waQ" secondAttribute="bottom" constant="25.5" id="WnS-JZ-3o5"/>
                             <constraint firstItem="pYb-cZ-805" firstAttribute="top" secondItem="DcQ-Hx-BaP" secondAttribute="top" id="X0W-TH-xLB"/>
                             <constraint firstItem="gtg-Yt-waQ" firstAttribute="top" secondItem="Lnw-0O-rnf" secondAttribute="bottom" constant="40" id="Ydf-Y8-ghV"/>
                             <constraint firstItem="Qct-bV-3SP" firstAttribute="top" secondItem="pYb-cZ-805" secondAttribute="bottom" constant="80" id="baM-aK-0FO"/>
                             <constraint firstItem="Lnw-0O-rnf" firstAttribute="top" secondItem="vwN-Rd-sTG" secondAttribute="bottom" constant="20" id="oV7-cB-0Fz"/>
                             <constraint firstItem="Qct-bV-3SP" firstAttribute="leading" secondItem="CcY-jE-93g" secondAttribute="leading" constant="15" id="ubd-Yz-9lQ"/>
                             <constraint firstItem="CcY-jE-93g" firstAttribute="trailing" secondItem="Qct-bV-3SP" secondAttribute="trailing" constant="15" id="vki-Hz-MVh"/>
+                            <constraint firstItem="cq9-w8-zkE" firstAttribute="centerX" secondItem="gtg-Yt-waQ" secondAttribute="centerX" id="xGM-oJ-EX2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CcY-jE-93g"/>
                     </view>
@@ -1803,11 +1827,70 @@ total of 16.98€ EUR</string>
             </objects>
             <point key="canvasLocation" x="1549" y="1540"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="MHs-1Z-2rY">
+            <objects>
+                <viewController id="2gk-MV-eHQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8UH-mw-2Mh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iQ-xk-cHe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="98.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMz-XP-PNN">
+                                        <rect key="frame" x="7" y="24" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VMz-XP-PNN" secondAttribute="height" multiplier="1:1" id="ZO2-bZ-pNe"/>
+                                            <constraint firstAttribute="height" constant="60" id="aBr-TZ-fUi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="ixT-Gs-JN0" kind="presentation" customClass="RightToLeft" customModule="hci" customModuleProvider="target" modalPresentationStyle="fullScreen" id="JKy-9N-vb1"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NutriDaily" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQN-Ij-DRK">
+                                        <rect key="frame" x="67" y="29" width="280" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="lJU-3K-iDQ"/>
+                                            <constraint firstAttribute="height" constant="50" id="m3G-Te-rbR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81568627449999997" green="0.0" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VMz-XP-PNN" firstAttribute="top" secondItem="1iQ-xk-cHe" secondAttribute="top" constant="24" id="4AZ-wY-xvv"/>
+                                    <constraint firstItem="rQN-Ij-DRK" firstAttribute="centerY" secondItem="VMz-XP-PNN" secondAttribute="centerY" id="Jy6-C6-vBL"/>
+                                    <constraint firstItem="VMz-XP-PNN" firstAttribute="leading" secondItem="1iQ-xk-cHe" secondAttribute="leading" constant="7" id="j6D-Kw-Fxr"/>
+                                    <constraint firstAttribute="height" constant="98.5" id="pBM-gY-5Bl"/>
+                                    <constraint firstItem="rQN-Ij-DRK" firstAttribute="centerX" secondItem="1iQ-xk-cHe" secondAttribute="centerX" id="pjL-1J-VUC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1iQ-xk-cHe" firstAttribute="top" secondItem="8UH-mw-2Mh" secondAttribute="top" id="8Yh-Ra-awe"/>
+                            <constraint firstItem="9xf-tZ-e7U" firstAttribute="trailing" secondItem="1iQ-xk-cHe" secondAttribute="trailing" id="Yty-QM-aq6"/>
+                            <constraint firstItem="1iQ-xk-cHe" firstAttribute="leading" secondItem="8UH-mw-2Mh" secondAttribute="leading" id="nEm-p3-o1D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9xf-tZ-e7U"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6k-Wi-aZ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760" y="2269"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BO3-kK-JBI"/>
-        <segue reference="mgI-qi-6xc"/>
-        <segue reference="3dw-fX-UCq"/>
+        <segue reference="OFL-Zs-kox"/>
+        <segue reference="JKy-9N-vb1"/>
+        <segue reference="2Qh-nd-lGq"/>
+        <segue reference="GKF-TH-gOM"/>
         <segue reference="isy-0U-kYo"/>
     </inferredMetricsTieBreakers>
     <resources>
