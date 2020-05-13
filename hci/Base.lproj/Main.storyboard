@@ -1632,7 +1632,7 @@ Tahini sauce (optional)
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="A diet plant for every lifestyle" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qct-bV-3SP">
-                                <rect key="frame" x="15" y="178.5" width="384" height="80"/>
+                                <rect key="frame" x="15" y="138.5" width="384" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="b9t-B8-OeX"/>
                                 </constraints>
@@ -1641,7 +1641,7 @@ Tahini sauce (optional)
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwN-Rd-sTG">
-                                <rect key="frame" x="10" y="318.5" width="394" height="180"/>
+                                <rect key="frame" x="10" y="243.5" width="394" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="sCe-zy-fa0"/>
                                 </constraints>
@@ -1654,7 +1654,7 @@ specific recipes !</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnw-0O-rnf" customClass="UIViewX">
-                                <rect key="frame" x="30" y="518.5" width="155" height="180"/>
+                                <rect key="frame" x="30" y="443.5" width="155" height="180"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDU-cY-R8J">
                                         <rect key="frame" x="0.0" y="0.0" width="155" height="25"/>
@@ -1707,7 +1707,7 @@ total of 57.36€ EUR</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWM-y2-kbI" customClass="UIViewX">
-                                <rect key="frame" x="229" y="518.5" width="155" height="180"/>
+                                <rect key="frame" x="229" y="443.5" width="155" height="180"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6h-co-IQb">
                                         <rect key="frame" x="0.0" y="0.0" width="155" height="25"/>
@@ -1808,13 +1808,13 @@ total of 16.98€ EUR</string>
                             <constraint firstItem="pYb-cZ-805" firstAttribute="leading" secondItem="DcQ-Hx-BaP" secondAttribute="leading" id="CQd-R9-rkA"/>
                             <constraint firstItem="ZWM-y2-kbI" firstAttribute="top" secondItem="vwN-Rd-sTG" secondAttribute="bottom" constant="20" id="DD2-XQ-xz5"/>
                             <constraint firstItem="vwN-Rd-sTG" firstAttribute="leading" secondItem="DcQ-Hx-BaP" secondAttribute="leading" constant="10" id="EfQ-cX-WE9"/>
-                            <constraint firstItem="vwN-Rd-sTG" firstAttribute="top" secondItem="Qct-bV-3SP" secondAttribute="bottom" constant="60" id="PSF-vW-HcU"/>
+                            <constraint firstItem="vwN-Rd-sTG" firstAttribute="top" secondItem="Qct-bV-3SP" secondAttribute="bottom" constant="25" id="PSF-vW-HcU"/>
                             <constraint firstItem="Lnw-0O-rnf" firstAttribute="leading" secondItem="CcY-jE-93g" secondAttribute="leading" constant="30" id="Tim-8h-y7r"/>
                             <constraint firstItem="gtg-Yt-waQ" firstAttribute="centerX" secondItem="CcY-jE-93g" secondAttribute="centerX" id="VNT-FS-3cJ"/>
                             <constraint firstItem="cq9-w8-zkE" firstAttribute="top" secondItem="gtg-Yt-waQ" secondAttribute="bottom" constant="25.5" id="WnS-JZ-3o5"/>
                             <constraint firstItem="pYb-cZ-805" firstAttribute="top" secondItem="DcQ-Hx-BaP" secondAttribute="top" id="X0W-TH-xLB"/>
-                            <constraint firstItem="gtg-Yt-waQ" firstAttribute="top" secondItem="Lnw-0O-rnf" secondAttribute="bottom" constant="40" id="Ydf-Y8-ghV"/>
-                            <constraint firstItem="Qct-bV-3SP" firstAttribute="top" secondItem="pYb-cZ-805" secondAttribute="bottom" constant="80" id="baM-aK-0FO"/>
+                            <constraint firstItem="CcY-jE-93g" firstAttribute="bottom" secondItem="cq9-w8-zkE" secondAttribute="bottom" constant="12" id="X9x-2R-dDa"/>
+                            <constraint firstItem="Qct-bV-3SP" firstAttribute="top" secondItem="pYb-cZ-805" secondAttribute="bottom" constant="40" id="baM-aK-0FO"/>
                             <constraint firstItem="Lnw-0O-rnf" firstAttribute="top" secondItem="vwN-Rd-sTG" secondAttribute="bottom" constant="20" id="oV7-cB-0Fz"/>
                             <constraint firstItem="Qct-bV-3SP" firstAttribute="leading" secondItem="CcY-jE-93g" secondAttribute="leading" constant="15" id="ubd-Yz-9lQ"/>
                             <constraint firstItem="CcY-jE-93g" firstAttribute="trailing" secondItem="Qct-bV-3SP" secondAttribute="trailing" constant="15" id="vki-Hz-MVh"/>
@@ -1871,11 +1871,66 @@ total of 16.98€ EUR</string>
                                     <constraint firstItem="rQN-Ij-DRK" firstAttribute="centerX" secondItem="1iQ-xk-cHe" secondAttribute="centerX" id="pjL-1J-VUC"/>
                                 </constraints>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ct5-bo-XCp">
+                                <rect key="frame" x="10" y="108.5" width="394" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="H8F-LK-Eph"/>
+                                </constraints>
+                                <string key="text">Offer onlyvalid during sign up
+sign up</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fr7-Ne-Xcb">
+                                <rect key="frame" x="15" y="188.5" width="384" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="29W-yY-qFY"/>
+                                </constraints>
+                                <string key="text">Start your 7-day free trial
+Enjoy your personalized plans,
+advice from our professional
+nustritionsts, and delicious recipes to
+reach your goals</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chef2" translatesAutoresizingMaskIntoConstraints="NO" id="Kck-OE-AN0">
+                                <rect key="frame" x="87" y="448.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="NeB-zI-30t"/>
+                                    <constraint firstAttribute="height" constant="128" id="OMg-oB-ORf"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUG-c6-TNw">
+                                <rect key="frame" x="15" y="596.5" width="384" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="UZ0-6B-moP"/>
+                                </constraints>
+                                <string key="text">JOIN THOUSANDS OF
+ SATISFIED USERS           4.4/5 over +1,000 ratings</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="sUG-c6-TNw" firstAttribute="top" secondItem="Kck-OE-AN0" secondAttribute="bottom" constant="20" id="3hc-gx-MEX"/>
+                            <constraint firstAttribute="trailing" secondItem="Fr7-Ne-Xcb" secondAttribute="trailing" constant="15" id="5tj-Ak-zsb"/>
+                            <constraint firstItem="Fr7-Ne-Xcb" firstAttribute="leading" secondItem="9xf-tZ-e7U" secondAttribute="leading" constant="15" id="6St-8p-0Yg"/>
                             <constraint firstItem="1iQ-xk-cHe" firstAttribute="top" secondItem="8UH-mw-2Mh" secondAttribute="top" id="8Yh-Ra-awe"/>
+                            <constraint firstItem="sUG-c6-TNw" firstAttribute="height" secondItem="Fr7-Ne-Xcb" secondAttribute="height" id="9it-vD-rC3"/>
+                            <constraint firstItem="Fr7-Ne-Xcb" firstAttribute="top" secondItem="Ct5-bo-XCp" secondAttribute="bottom" id="Cih-KU-1xh"/>
+                            <constraint firstItem="Kck-OE-AN0" firstAttribute="top" secondItem="Fr7-Ne-Xcb" secondAttribute="bottom" constant="30" id="Fz0-fE-3ey"/>
+                            <constraint firstItem="9xf-tZ-e7U" firstAttribute="trailing" secondItem="Ct5-bo-XCp" secondAttribute="trailing" constant="10" id="Kpn-Iw-fk6"/>
+                            <constraint firstItem="Ct5-bo-XCp" firstAttribute="leading" secondItem="8UH-mw-2Mh" secondAttribute="leading" constant="10" id="Vng-GG-Ztw"/>
                             <constraint firstItem="9xf-tZ-e7U" firstAttribute="trailing" secondItem="1iQ-xk-cHe" secondAttribute="trailing" id="Yty-QM-aq6"/>
+                            <constraint firstItem="Kck-OE-AN0" firstAttribute="centerX" secondItem="9xf-tZ-e7U" secondAttribute="centerX" id="a6r-hi-fev"/>
+                            <constraint firstItem="sUG-c6-TNw" firstAttribute="width" secondItem="Fr7-Ne-Xcb" secondAttribute="width" id="bmD-ep-eDq"/>
+                            <constraint firstItem="sUG-c6-TNw" firstAttribute="centerX" secondItem="9xf-tZ-e7U" secondAttribute="centerX" id="f6D-Hy-Prc"/>
+                            <constraint firstItem="Ct5-bo-XCp" firstAttribute="top" secondItem="1iQ-xk-cHe" secondAttribute="bottom" constant="10" id="kzk-on-JVY"/>
                             <constraint firstItem="1iQ-xk-cHe" firstAttribute="leading" secondItem="8UH-mw-2Mh" secondAttribute="leading" id="nEm-p3-o1D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9xf-tZ-e7U"/>
@@ -1887,7 +1942,6 @@ total of 16.98€ EUR</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OFL-Zs-kox"/>
         <segue reference="JKy-9N-vb1"/>
         <segue reference="2Qh-nd-lGq"/>
         <segue reference="GKF-TH-gOM"/>
@@ -1900,6 +1954,7 @@ total of 16.98€ EUR</string>
         <image name="Roast-Chicken-with-Rosemary-_-Lemon-Finals-15" width="550" height="825"/>
         <image name="apple" width="512" height="512"/>
         <image name="back" width="512" height="512"/>
+        <image name="chef2" width="837" height="514"/>
         <image name="chickpea-photo-1" width="680" height="900"/>
         <image name="email" width="512" height="512"/>
         <image name="facebook%20(1)" width="837" height="514"/>
