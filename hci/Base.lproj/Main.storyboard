@@ -1293,7 +1293,7 @@
                                     <segue destination="6bG-w5-ASt" kind="presentation" customClass="LeftToRight" customModule="hci" customModuleProvider="target" modalPresentationStyle="fullScreen" id="CjV-N7-3W0"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLV-j1-RUI">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nickname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLV-j1-RUI">
                                 <rect key="frame" x="92" y="182" width="230" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="Mfd-qm-zME"/>
@@ -1311,6 +1311,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oD5-VA-3fg">
+                                <rect key="frame" x="92" y="344" width="230" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="nKc-vl-wBJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TXd-YX-Vgx">
+                                <rect key="frame" x="144" y="407" width="127" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Male"/>
+                                    <segment title="Female"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1318,6 +1334,7 @@
                             <constraint firstItem="bLV-j1-RUI" firstAttribute="top" secondItem="yem-3i-DWk" secondAttribute="bottom" constant="83.5" id="1Qb-i5-DKX"/>
                             <constraint firstItem="qrr-Eu-HDA" firstAttribute="width" secondItem="TGY-7B-O10" secondAttribute="width" id="BEI-LA-1FJ"/>
                             <constraint firstItem="2Ot-eL-4mB" firstAttribute="centerY" secondItem="UOP-BJ-DPC" secondAttribute="centerY" id="Be7-ER-a7W"/>
+                            <constraint firstItem="oD5-VA-3fg" firstAttribute="height" secondItem="qrr-Eu-HDA" secondAttribute="height" id="CUC-Te-V1F"/>
                             <constraint firstItem="TGY-7B-O10" firstAttribute="width" secondItem="bLV-j1-RUI" secondAttribute="width" id="DKf-eK-LfT"/>
                             <constraint firstItem="qrr-Eu-HDA" firstAttribute="height" secondItem="TGY-7B-O10" secondAttribute="height" id="EY7-T1-QhC"/>
                             <constraint firstItem="qrr-Eu-HDA" firstAttribute="centerX" secondItem="TGY-7B-O10" secondAttribute="centerX" id="H5d-XX-Tu7"/>
@@ -1326,8 +1343,11 @@
                             <constraint firstItem="AiQ-uV-hlQ" firstAttribute="centerX" secondItem="Zht-IU-MHT" secondAttribute="centerX" id="Km6-5j-hmR"/>
                             <constraint firstItem="UOP-BJ-DPC" firstAttribute="leading" secondItem="Zht-IU-MHT" secondAttribute="leading" constant="40" id="Q3s-lh-Ql2"/>
                             <constraint firstItem="2Ot-eL-4mB" firstAttribute="height" secondItem="UOP-BJ-DPC" secondAttribute="height" multiplier="0.95671" id="Rde-9I-MeY"/>
+                            <constraint firstItem="oD5-VA-3fg" firstAttribute="width" secondItem="qrr-Eu-HDA" secondAttribute="width" id="ThS-uG-laR"/>
+                            <constraint firstItem="oD5-VA-3fg" firstAttribute="top" secondItem="qrr-Eu-HDA" secondAttribute="bottom" constant="20" id="Tk8-aN-sYp"/>
                             <constraint firstItem="TGY-7B-O10" firstAttribute="centerX" secondItem="bLV-j1-RUI" secondAttribute="centerX" id="UWX-GN-olM"/>
                             <constraint firstItem="TGY-7B-O10" firstAttribute="top" secondItem="bLV-j1-RUI" secondAttribute="bottom" constant="20" id="cYN-87-Ny9"/>
+                            <constraint firstItem="oD5-VA-3fg" firstAttribute="centerX" secondItem="Zht-IU-MHT" secondAttribute="centerX" id="f1z-he-pX2"/>
                             <constraint firstItem="bLV-j1-RUI" firstAttribute="centerX" secondItem="Zht-IU-MHT" secondAttribute="centerX" id="hri-Wc-b21"/>
                             <constraint firstItem="jYp-y7-fGR" firstAttribute="centerX" secondItem="Zht-IU-MHT" secondAttribute="centerX" id="j07-3a-vTD"/>
                             <constraint firstItem="Zht-IU-MHT" firstAttribute="top" secondItem="ZcY-wj-DV6" secondAttribute="top" constant="20" id="jYS-kb-Sci"/>
@@ -2010,7 +2030,7 @@ advice from our professional
 nustritionsts, and delicious recipes to
 reach your goals</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chef2" translatesAutoresizingMaskIntoConstraints="NO" id="Kck-OE-AN0">
@@ -2059,7 +2079,7 @@ reach your goals</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OFL-Zs-kox"/>
+        <segue reference="CjV-N7-3W0"/>
         <segue reference="JKy-9N-vb1"/>
         <segue reference="fCW-5W-Qrh"/>
         <segue reference="dT9-Ry-LKG"/>
