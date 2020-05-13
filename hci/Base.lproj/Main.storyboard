@@ -166,8 +166,8 @@
                                             <segue destination="7ko-kI-dBV" kind="presentation" customClass="LeftToRight" customModule="hci" customModuleProvider="target" modalPresentationStyle="fullScreen" id="o67-X6-gEM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzi-6Z-wmp">
-                                        <rect key="frame" x="0.0" y="189.5" width="200" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzi-6Z-wmp">
+                                        <rect key="frame" x="0.0" y="105" width="200" height="79.5"/>
                                         <color key="backgroundColor" red="0.82352941180000006" green="0.45882352939999999" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Find recipes">
@@ -181,11 +181,14 @@
                                 <color key="backgroundColor" red="0.81568627450980391" green="0.0" blue="0.015686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="HXc-Lj-141" firstAttribute="centerX" secondItem="2AC-EF-0Z3" secondAttribute="centerX" id="4ck-8N-7oi"/>
+                                    <constraint firstItem="Kzi-6Z-wmp" firstAttribute="width" secondItem="HXc-Lj-141" secondAttribute="width" id="9Vv-ai-d75"/>
                                     <constraint firstItem="HXc-Lj-141" firstAttribute="top" secondItem="2AC-EF-0Z3" secondAttribute="top" constant="10" id="EWU-mm-pDN"/>
+                                    <constraint firstItem="Kzi-6Z-wmp" firstAttribute="top" secondItem="HXc-Lj-141" secondAttribute="bottom" constant="15" id="Ecx-dd-kcW"/>
                                     <constraint firstItem="HXc-Lj-141" firstAttribute="height" secondItem="2AC-EF-0Z3" secondAttribute="height" multiplier="0.1" id="Ghx-xx-APa"/>
                                     <constraint firstItem="HXc-Lj-141" firstAttribute="width" secondItem="2AC-EF-0Z3" secondAttribute="width" id="SRy-su-wyz"/>
                                     <constraint firstAttribute="width" constant="200" id="exd-Qs-FMT"/>
                                     <constraint firstItem="Kzi-6Z-wmp" firstAttribute="leading" secondItem="2AC-EF-0Z3" secondAttribute="leading" id="iYW-2K-2bb"/>
+                                    <constraint firstItem="Kzi-6Z-wmp" firstAttribute="height" secondItem="HXc-Lj-141" secondAttribute="height" id="ltx-Ge-vUr"/>
                                     <constraint firstAttribute="trailing" secondItem="Kzi-6Z-wmp" secondAttribute="trailing" id="nAR-9e-Prh"/>
                                 </constraints>
                             </view>
@@ -1287,6 +1290,7 @@
                                 </state>
                                 <connections>
                                     <action selector="registerButton:" destination="9Nu-8e-r78" eventType="touchUpInside" id="qSo-VD-68f"/>
+                                    <segue destination="6bG-w5-ASt" kind="presentation" customClass="LeftToRight" customModule="hci" customModuleProvider="target" modalPresentationStyle="fullScreen" id="CjV-N7-3W0"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLV-j1-RUI">
@@ -1347,7 +1351,120 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tM-GD-APA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="-469"/>
+            <point key="canvasLocation" x="1387" y="-648"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0AY-il-uix">
+            <objects>
+                <viewController id="6bG-w5-ASt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ed4-yg-Oem">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bds-qk-x7R">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="98.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdD-xR-F64">
+                                        <rect key="frame" x="7" y="24" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="WdD-xR-F64" secondAttribute="height" multiplier="1:1" id="H1g-XB-mH9"/>
+                                            <constraint firstAttribute="height" constant="60" id="yhk-Kn-4Ah"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="9Nu-8e-r78" kind="presentation" customClass="RightToLeft" customModule="hci" customModuleProvider="target" modalPresentationStyle="fullScreen" id="fCW-5W-Qrh"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTg-rv-mLj">
+                                        <rect key="frame" x="87" y="37.5" width="240" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="DhP-LP-Oyr"/>
+                                            <constraint firstAttribute="height" constant="33" id="ddP-LG-uOr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81568627449999997" green="0.0" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WdD-xR-F64" firstAttribute="leading" secondItem="bds-qk-x7R" secondAttribute="leading" constant="7" id="4vt-nW-sWV"/>
+                                    <constraint firstItem="xTg-rv-mLj" firstAttribute="centerX" secondItem="bds-qk-x7R" secondAttribute="centerX" id="7eb-EO-7BU"/>
+                                    <constraint firstItem="WdD-xR-F64" firstAttribute="leading" secondItem="bds-qk-x7R" secondAttribute="leading" constant="7" id="9vo-6x-rTe"/>
+                                    <constraint firstAttribute="height" constant="98.5" id="JAO-ev-pQg"/>
+                                    <constraint firstItem="WdD-xR-F64" firstAttribute="top" secondItem="bds-qk-x7R" secondAttribute="top" constant="24" id="OIx-bX-CRL"/>
+                                    <constraint firstItem="xTg-rv-mLj" firstAttribute="centerY" secondItem="WdD-xR-F64" secondAttribute="centerY" id="eYQ-lJ-Qrg"/>
+                                    <constraint firstAttribute="width" constant="414" id="l7e-ei-l6Q"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bif-FR-2pD">
+                                <rect key="frame" x="127" y="803" width="160" height="43"/>
+                                <color key="backgroundColor" red="0.81568627449999997" green="0.23309075339999999" blue="0.21899856049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="KTY-yu-TXw"/>
+                                    <constraint firstAttribute="width" constant="160" id="z5d-D5-bzl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="23"/>
+                                <state key="normal" title="Start cooking">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="9Nu-8e-r78" eventType="touchUpInside" id="eWd-rG-nX9"/>
+                                    <segue destination="bo8-Ha-7Ar" kind="presentation" customClass="LeftToRight" customModule="hci" customModuleProvider="target" modalPresentationStyle="fullScreen" id="vnJ-pJ-RuS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXB-eS-Hjb">
+                                <rect key="frame" x="20" y="113.5" width="240" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="UEr-Ks-bvy"/>
+                                    <constraint firstAttribute="width" constant="240" id="wio-S1-Ew1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="28"/>
+                                <color key="textColor" red="0.75262200339999996" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdI-pF-BC3">
+                                <rect key="frame" x="20" y="150.5" width="374" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="c3W-Dj-g2Y"/>
+                                </constraints>
+                                <string key="text">We have the perfect nutrition plan 
+for you in order to support your 
+goals</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-05-13 at 22.50.55" translatesAutoresizingMaskIntoConstraints="NO" id="Ymk-Gq-CyB">
+                                <rect key="frame" x="57" y="401" width="300" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="dNd-8d-OvY"/>
+                                    <constraint firstAttribute="width" constant="300" id="h3p-bo-hyV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bds-qk-x7R" firstAttribute="leading" secondItem="XHS-8b-f2o" secondAttribute="leading" id="4Fn-Nf-hfC"/>
+                            <constraint firstItem="XHS-8b-f2o" firstAttribute="bottom" secondItem="bif-FR-2pD" secondAttribute="bottom" constant="16" id="8bf-Bo-BIT"/>
+                            <constraint firstItem="UXB-eS-Hjb" firstAttribute="leading" secondItem="XHS-8b-f2o" secondAttribute="leading" constant="20" id="9sQ-0d-hwe"/>
+                            <constraint firstItem="Ymk-Gq-CyB" firstAttribute="top" secondItem="rdI-pF-BC3" secondAttribute="bottom" constant="70.5" id="VMq-WZ-UhI"/>
+                            <constraint firstItem="UXB-eS-Hjb" firstAttribute="top" secondItem="bds-qk-x7R" secondAttribute="bottom" constant="15" id="WzP-dQ-8tk"/>
+                            <constraint firstItem="rdI-pF-BC3" firstAttribute="leading" secondItem="XHS-8b-f2o" secondAttribute="leading" constant="20" id="ah0-wL-bhY"/>
+                            <constraint firstItem="rdI-pF-BC3" firstAttribute="top" secondItem="UXB-eS-Hjb" secondAttribute="bottom" id="chM-RO-f48"/>
+                            <constraint firstItem="bif-FR-2pD" firstAttribute="centerX" secondItem="XHS-8b-f2o" secondAttribute="centerX" id="dab-CF-gf4"/>
+                            <constraint firstItem="XHS-8b-f2o" firstAttribute="trailing" secondItem="rdI-pF-BC3" secondAttribute="trailing" constant="20" id="eQf-qx-WX8"/>
+                            <constraint firstItem="bds-qk-x7R" firstAttribute="top" secondItem="Ed4-yg-Oem" secondAttribute="top" id="ivl-YF-jQ1"/>
+                            <constraint firstItem="Ymk-Gq-CyB" firstAttribute="centerX" secondItem="XHS-8b-f2o" secondAttribute="centerX" id="ssx-Md-1C7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XHS-8b-f2o"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Txz-Pl-8jA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2385" y="-637"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="j5m-5x-FE1">
@@ -1470,7 +1587,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wif-2E-aOV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="-177"/>
+            <point key="canvasLocation" x="2177" y="60"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dg0-PE-SBh">
@@ -1942,16 +2059,19 @@ reach your goals</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="OFL-Zs-kox"/>
         <segue reference="JKy-9N-vb1"/>
-        <segue reference="2Qh-nd-lGq"/>
-        <segue reference="GKF-TH-gOM"/>
-        <segue reference="isy-0U-kYo"/>
+        <segue reference="fCW-5W-Qrh"/>
+        <segue reference="dT9-Ry-LKG"/>
+        <segue reference="vnJ-pJ-RuS"/>
+        <segue reference="NAX-Jb-VbE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="240_F_73939324_B9gbZhfpEO6UYaDDzkrsts8AZaAO6hl8" width="240" height="240"/>
         <image name="37120052182_e66f76be2d_c" width="530" height="800"/>
         <image name="Fatafeat-California-gardens-May-12-article_235577_large" width="800" height="533"/>
         <image name="Roast-Chicken-with-Rosemary-_-Lemon-Finals-15" width="550" height="825"/>
+        <image name="Screenshot 2020-05-13 at 22.50.55" width="1010" height="884"/>
         <image name="apple" width="512" height="512"/>
         <image name="back" width="512" height="512"/>
         <image name="chef2" width="837" height="514"/>
