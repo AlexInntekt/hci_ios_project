@@ -38,6 +38,10 @@ class MainPageVC: UIViewController
     {
         
     }
+    @IBAction func beans(_ sender: Any)
+    {
+        self.performSegue(withIdentifier: "veggiesList", sender: "")
+    }
     
     @IBAction func buttonVeggies(_ sender: Any)
     {

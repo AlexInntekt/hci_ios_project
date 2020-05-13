@@ -717,6 +717,12 @@
                                     <constraint firstAttribute="width" constant="200" id="vMh-zM-AFs"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUd-oJ-iCE">
+                                <rect key="frame" x="15" y="262" width="145" height="90"/>
+                                <connections>
+                                    <action selector="beans:" destination="bo8-Ha-7Ar" eventType="touchUpInside" id="K9H-ph-HcI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -729,6 +735,7 @@
                             <constraint firstItem="a5p-bu-tBV" firstAttribute="top" secondItem="1hA-nD-rL4" secondAttribute="bottom" constant="50" id="4MW-XE-5aK"/>
                             <constraint firstItem="a5p-bu-tBV" firstAttribute="height" secondItem="wIx-gc-pAp" secondAttribute="height" id="4vP-cb-eTK"/>
                             <constraint firstItem="Nc6-em-ElN" firstAttribute="bottom" secondItem="8dB-R4-TPc" secondAttribute="bottom" constant="-20" id="7Q8-Av-LfF"/>
+                            <constraint firstItem="GUd-oJ-iCE" firstAttribute="centerX" secondItem="ajs-om-Zjr" secondAttribute="centerX" id="8Pu-Gj-3p4"/>
                             <constraint firstItem="8dB-R4-TPc" firstAttribute="width" secondItem="QmV-Vn-L6a" secondAttribute="width" id="8zF-ax-xZG"/>
                             <constraint firstItem="JKq-fD-Hbm" firstAttribute="centerY" secondItem="Nc6-em-ElN" secondAttribute="centerY" id="9dy-B6-WGF"/>
                             <constraint firstItem="I2m-M9-hg6" firstAttribute="bottom" secondItem="K4Z-ti-MZo" secondAttribute="bottom" constant="-20" id="A5b-ZT-Dfq"/>
@@ -741,10 +748,12 @@
                             <constraint firstAttribute="bottom" secondItem="VT4-yh-c8p" secondAttribute="bottom" id="FWe-eQ-v8a"/>
                             <constraint firstItem="I2m-M9-hg6" firstAttribute="trailing" secondItem="K4Z-ti-MZo" secondAttribute="trailing" constant="-20" id="FYC-c3-5aF"/>
                             <constraint firstItem="K4Z-ti-MZo" firstAttribute="height" secondItem="8dB-R4-TPc" secondAttribute="height" id="GaK-4I-rGI"/>
+                            <constraint firstItem="GUd-oJ-iCE" firstAttribute="height" secondItem="ajs-om-Zjr" secondAttribute="height" id="Go7-tN-hDa"/>
                             <constraint firstItem="Le1-Eq-hjd" firstAttribute="bottom" secondItem="QmV-Vn-L6a" secondAttribute="bottom" constant="-20" id="GrK-NQ-U28"/>
                             <constraint firstItem="Le1-Eq-hjd" firstAttribute="trailing" secondItem="QmV-Vn-L6a" secondAttribute="trailing" constant="-25" id="IBL-dE-l3L"/>
                             <constraint firstItem="Yji-Ee-t9H" firstAttribute="leading" secondItem="ta7-uh-U8e" secondAttribute="leading" id="IYD-Ii-TGF"/>
                             <constraint firstItem="I2m-M9-hg6" firstAttribute="centerY" secondItem="ajs-om-Zjr" secondAttribute="centerY" id="IrM-wD-Prk"/>
+                            <constraint firstItem="GUd-oJ-iCE" firstAttribute="centerY" secondItem="ajs-om-Zjr" secondAttribute="centerY" id="MC7-2Q-Brf"/>
                             <constraint firstItem="a5p-bu-tBV" firstAttribute="centerX" secondItem="wIx-gc-pAp" secondAttribute="centerX" id="MLz-tn-EGz"/>
                             <constraint firstItem="I2m-M9-hg6" firstAttribute="centerX" secondItem="IJU-18-ejn" secondAttribute="centerX" id="MR8-jp-YXI"/>
                             <constraint firstItem="1hA-nD-rL4" firstAttribute="height" secondItem="Le1-Eq-hjd" secondAttribute="height" id="OtJ-m5-v7A"/>
@@ -759,6 +768,7 @@
                             <constraint firstItem="wIx-gc-pAp" firstAttribute="centerX" secondItem="aTa-oR-zV2" secondAttribute="centerX" id="agp-tN-03Q"/>
                             <constraint firstItem="Nc6-em-ElN" firstAttribute="top" secondItem="ajs-om-Zjr" secondAttribute="bottom" constant="35" id="alR-5o-UKJ"/>
                             <constraint firstItem="aTa-oR-zV2" firstAttribute="bottom" secondItem="wjD-8J-BSx" secondAttribute="bottom" constant="10" id="bCQ-tj-55Y"/>
+                            <constraint firstItem="GUd-oJ-iCE" firstAttribute="width" secondItem="ajs-om-Zjr" secondAttribute="width" id="bjx-lZ-Cew"/>
                             <constraint firstItem="fyf-Ef-6Wx" firstAttribute="width" secondItem="wIx-gc-pAp" secondAttribute="width" multiplier="0.6" id="bxO-fR-ahh"/>
                             <constraint firstItem="1hA-nD-rL4" firstAttribute="leading" secondItem="ta7-uh-U8e" secondAttribute="leading" constant="15" id="dnY-2w-DTA"/>
                             <constraint firstItem="zYw-nQ-Vae" firstAttribute="width" secondItem="Nc6-em-ElN" secondAttribute="width" id="fvq-mS-Ssp"/>
@@ -847,7 +857,7 @@
                                     <constraint firstItem="eHl-0i-uqr" firstAttribute="centerY" secondItem="amL-vm-FWt" secondAttribute="centerY" id="miv-pK-Okb"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover Recipes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULh-Yn-hqv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipes with chickpeas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULh-Yn-hqv">
                                 <rect key="frame" x="15" y="113.5" width="384" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="HVe-rZ-gsK"/>
@@ -964,6 +974,11 @@
                                     <segue destination="rEq-F4-rEo" kind="presentation" customClass="LeftToRight" customModule="hci" customModuleProvider="target" modalPresentationStyle="fullScreen" id="BO3-kK-JBI"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOy-rI-aSr">
+                                <rect key="frame" x="30" y="768" width="240" height="128"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="q5r-zR-WCA"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="gDW-A6-DIN"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -972,12 +987,14 @@
                             <constraint firstItem="eox-7m-EYb" firstAttribute="top" secondItem="Wrc-xk-ckp" secondAttribute="top" id="43Y-4Y-mHC"/>
                             <constraint firstItem="ULh-Yn-hqv" firstAttribute="top" secondItem="eox-7m-EYb" secondAttribute="bottom" constant="15" id="6ch-8B-Shd"/>
                             <constraint firstItem="qsO-2Z-wkY" firstAttribute="top" secondItem="HIj-SS-u0c" secondAttribute="bottom" id="CKh-bE-XQR"/>
+                            <constraint firstItem="hYu-e4-Mxp" firstAttribute="trailing" secondItem="LOy-rI-aSr" secondAttribute="trailing" constant="15" id="Cd5-RI-mef"/>
                             <constraint firstItem="HIj-SS-u0c" firstAttribute="centerX" secondItem="hYu-e4-Mxp" secondAttribute="centerX" id="Cm6-2W-gou"/>
                             <constraint firstItem="HIj-SS-u0c" firstAttribute="width" secondItem="3ZR-eQ-yzJ" secondAttribute="width" id="EGo-bq-aWw"/>
                             <constraint firstItem="qsO-2Z-wkY" firstAttribute="width" secondItem="HIj-SS-u0c" secondAttribute="width" id="EOi-ed-Adb"/>
                             <constraint firstItem="Nzn-R2-Lh7" firstAttribute="height" secondItem="3ZR-eQ-yzJ" secondAttribute="height" id="LTp-7z-PD2"/>
                             <constraint firstAttribute="trailing" secondItem="eox-7m-EYb" secondAttribute="trailing" id="RXL-up-1cp"/>
                             <constraint firstItem="HIj-SS-u0c" firstAttribute="top" secondItem="3ZR-eQ-yzJ" secondAttribute="bottom" constant="85" id="Rqt-9o-5S4"/>
+                            <constraint firstItem="LOy-rI-aSr" firstAttribute="leading" secondItem="hYu-e4-Mxp" secondAttribute="leading" constant="15" id="Y1Q-jz-17A"/>
                             <constraint firstItem="hYu-e4-Mxp" firstAttribute="trailing" secondItem="ULh-Yn-hqv" secondAttribute="trailing" constant="15" id="Ymm-iw-f28"/>
                             <constraint firstItem="3ZR-eQ-yzJ" firstAttribute="leading" secondItem="hYu-e4-Mxp" secondAttribute="leading" constant="20" id="Z5Y-gD-Ggo"/>
                             <constraint firstItem="EJC-1W-mhK" firstAttribute="centerX" secondItem="HIj-SS-u0c" secondAttribute="centerX" id="bv4-Uw-b71"/>
@@ -986,6 +1003,7 @@
                             <constraint firstItem="GE2-ig-8gx" firstAttribute="centerX" secondItem="3ZR-eQ-yzJ" secondAttribute="centerX" id="h70-JS-QKM"/>
                             <constraint firstItem="EJC-1W-mhK" firstAttribute="centerY" secondItem="HIj-SS-u0c" secondAttribute="centerY" id="hIO-LL-IvB"/>
                             <constraint firstItem="ULh-Yn-hqv" firstAttribute="leading" secondItem="Wrc-xk-ckp" secondAttribute="leading" constant="15" id="iCP-bh-B8w"/>
+                            <constraint firstAttribute="bottom" secondItem="LOy-rI-aSr" secondAttribute="bottom" constant="15" id="jwW-0N-gvJ"/>
                             <constraint firstItem="EJC-1W-mhK" firstAttribute="width" secondItem="HIj-SS-u0c" secondAttribute="width" id="njw-Ne-nzQ"/>
                             <constraint firstItem="GE2-ig-8gx" firstAttribute="top" secondItem="3ZR-eQ-yzJ" secondAttribute="bottom" id="nxi-Hj-ku3"/>
                             <constraint firstItem="qsO-2Z-wkY" firstAttribute="centerX" secondItem="HIj-SS-u0c" secondAttribute="centerX" id="pEv-pi-JRB"/>
@@ -993,6 +1011,7 @@
                             <constraint firstItem="HIj-SS-u0c" firstAttribute="height" secondItem="3ZR-eQ-yzJ" secondAttribute="height" id="ril-Jq-44V"/>
                             <constraint firstItem="3ZR-eQ-yzJ" firstAttribute="top" secondItem="ULh-Yn-hqv" secondAttribute="bottom" constant="14.5" id="sck-N4-orm"/>
                             <constraint firstItem="Nzn-R2-Lh7" firstAttribute="leading" secondItem="hYu-e4-Mxp" secondAttribute="leading" id="tv6-eS-cOf"/>
+                            <constraint firstItem="LOy-rI-aSr" firstAttribute="top" secondItem="ULh-Yn-hqv" secondAttribute="bottom" constant="574.5" id="u6C-OF-6zZ"/>
                             <constraint firstItem="Nzn-R2-Lh7" firstAttribute="top" secondItem="ULh-Yn-hqv" secondAttribute="bottom" id="vBo-aW-OH0"/>
                             <constraint firstItem="EJC-1W-mhK" firstAttribute="height" secondItem="HIj-SS-u0c" secondAttribute="height" id="yb1-WY-UXM"/>
                         </constraints>
@@ -1074,10 +1093,14 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HeI-qu-dvF">
                                 <rect key="frame" x="15" y="435.5" width="384" height="411.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">2 15-ounce cans chickpeas, drained and rinsed.
-2 15-ounce cans black beans, drained and rinsed.
-2 cups grape tomatoes (halved).
-1/2 cup red onion (finely diced).
+                                <string key="text">2 15-ounce cans chickpeas, drained and rinsed
+.
+2 15-ounce cans black beans, drained and rinsed
+.
+2 cups grape tomatoes (halved)
+.
+1/2 cup red onion (finely diced)
+.
 1/2 cup fresh mint (chopped).</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1502,7 +1525,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yf5-jX-dEa">
                                 <rect key="frame" x="15" y="435.5" width="384" height="411.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">1 15 oz. can chickpeas
+                                <string key="text">1 15 oz. can chickpeas
 2 15 oz. can fava beans
 2 large tomatoes
 ½ bunch parsley
@@ -1514,7 +1537,7 @@
 Tahini sauce (optional)
 2 tbsp tahini
 1 tbsp lemon juice
-1 tbsp water</mutableString>
+1 tbsp water</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1548,7 +1571,7 @@ Tahini sauce (optional)
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mgI-qi-6xc"/>
+        <segue reference="2Qh-nd-lGq"/>
         <segue reference="3dw-fX-UCq"/>
         <segue reference="isy-0U-kYo"/>
     </inferredMetricsTieBreakers>
